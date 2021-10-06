@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PLACEMENT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static "css/homee.css" %}">
+    </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Welcome</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+            </div>
+          </div><!-- /.navbar-collapse -->
+
+        </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-1">PLACEMENT CHECKER</h1> <br>
+    <form class="" action="{% url 'result' %}" method="GET">
+      {% csrf_token %}
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Age : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="Age" placeholder="Your Age">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Male : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="Male" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Female : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="Female" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">ECE : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="ECE" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">CSE : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="CSE" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">IT : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="IT" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">MECH : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="MECH" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">EEE : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="EEE" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">CIVIL : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="CIVIL" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Internships : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="Internships" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">CGPA : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="CGPA" placeholder="Your CGPA">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Hosteller : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="Hostel" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Backlogs : </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="Backlogs" placeholder="1 (Yes) or 0 (No)">
+        </div> <br>
+
+      <input type="submit" class="btn btn-dark btn-lg" name="" value="Submit">
+
+    </form>
+
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
